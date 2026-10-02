@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+     <!-- Nav bar -->
+  
+
+    <!--section 1-->
+<section class="h-30 w-auto bg-red-500">
+
+    <div class="flex justify-between items-center ">
+        <div>
+        <h1 class="text-4xl py-5 text-white mx-5 font-serif"> Hot Zone</h1>
+        </div>
+        <div class="text-white font-bold justify-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+        </div>
+
+        <div class="flex gap-4 text-white font-bold mx-4">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+    </div>
+
+</section>
+
+<!--section -2 -->
+
+<nav class=" bg-white shadow-md">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <div class="relative group hidden md:flex space-x-6">
+          <a href="index.html" class="text-xl   hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Home
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5"></span>
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-[#2A3B24] 
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+           
+          </div>
+        </div>
+
+            <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <a href="food.html" class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Food
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          
+        </div>
+
+             <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Western Cusinie
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="burger.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Burger</a>
+            <a href="pizza.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Pizza</a>
+            <a href="momos.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Momos</a>
+            <a href="sandwich.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sandwich</a>
+            <a href="shawarma.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Shawarma</a>
+          </div>
+        </div>
+
+         <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Snacks
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="vada.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Vada Pav</a>
+            <a href="sea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sea Food</a>
+            <a href="sushi.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sushi</a>
+            
+            
+          </div>
+        </div>
+
+           <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Beverages
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="mojiot.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Mojiot</a>
+            <a href="milk.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Milk Shark</a>
+            <a href="ice.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Ice Cream</a>
+            <a href="tea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Tea & Coffee</a>
+            
+          </div>
+        </div>
+       
+
+      <!-- Desktop Button -->
+      <a href="index.html" class="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+        Shop
+      </a>
+      <label for="menuToggle" class="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </label>
+
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+<input type="checkbox" id="menuToggle" class="hidden peer" />
+
+<!-- Mobile Menu -->
+<div
+  class="hidden peer-checked:flex md:hidden flex-col bg-white px-6 py-4 gap-4 shadow-lg"
+>
+  
+  <!-- Home -->
+  <a
+    href="index.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Home
+  </a>
+
+  <!-- Food -->
+  <a
+    href="food.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Food
+  </a>
+
+
+  <!-- Western Cuisine -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Western Cuisine
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+      <a href="burger.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Burger
+      </a>
+
+      <a href="pizza.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Pizza
+      </a>
+
+      <a href="momos.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Momos
+      </a>
+
+      <a href="sandwich.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sandwich
+      </a>
+
+      <a href="shawarma.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Shawarma
+      </a>
+    </div>
+  </details>
+
+
+  <!-- Snacks -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Snacks
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="vada.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Vada Pav
+      </a>
+
+      <a href="sea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sea Food
+      </a>
+
+      <a href="sushi.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sushi
+      </a>
+
+      <a href="meat.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Meat
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Beverages -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Beverages
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="mojiot.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Mojito
+      </a>
+
+      <a href="milk.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Milk Shake
+      </a>
+
+      <a href="ice.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Ice Cream
+      </a>
+
+      <a href="tea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Tea & Coffee
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Button -->
+  <a
+    href="index.html"
+    class="mt-2 bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-700 text-center transition"
+  >
+    Get Started
+  </a>
+
+</div>
+  </nav>
+
+
+<!--section -3-->
+
+<section class="relative h-180 w-full">
+    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     class="h-full w-full ">
+    <div class="absolute top-10 lg:left-20 ">
+        <h1 class="font-bold md:text-xl lg:text-2xl">Easy, Fresh & Convenient</h1>
+        <h2 class="font-bold md:text-3xl lg:text-7xl">Stock Up on<br>
+             Daily Essentials</h2>
+        <h3 class=" font-bold leading-15 text-xl lg:text-4xl">Save Big on Your Favorite Brands</h3>
+        
+        <button class=" p-3 bg-red-600 rounded-xl w-40 text-white font-bold text-3xl">shop</button>
+    </div>
+</section>
+
+<!--section -4 -->
+
+<section class="py-3 mx-4 h-full w-full">
+
+    <div class="flex gap-4 justify-center items-center overflow-x-auto">
+        <div class="shrink-0">
+        <h1 class="text-3xl font-bold">Free Door Delivery</h1>
+        <p>To Your Delivery</p>
+        </div>
+        <span class="h-18 w-0.5 bg-black"></span>
+
+        <div class="shrink-0">
+        <h1 class="text-3xl font-bold">Local Pickup</h1>
+        <p>Check Out <a href="location.html">Location</a></p>
+        </div>
+
+        <span class="h-18 w-0.5 bg-black"></span>
+
+        <div class="shrink-0">
+      <h1 class="text-3xl font-bold">Available foYour </h1>
+        <p><a href="available.html">Online Support</a>24/7</p>
+        </div>
+
+        <span class="h-18 w-0.5 bg-black"></span>
+
+    <div class="shrink-0">
+         <h1 class="text-3xl font-bold">Order on the Go</h1>
+        <p> <a href="https://www.zomato.com/">Download</a> Our App</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--section -5-->
+
+<section class="h-full w-full mx-3 p-5">
+    <h1 class="text-2xl font-bold tracking-widest">Beast Deals</h1>
+
+        
+        <div class="grid justify-center sm:gird-cols-1 lg:grid-cols-4">
+
+            <div class="flex  py-4 border-drashed h-165 w-90 justify-center shadow-2xl">
+                
+                <div class="py-5">
+                    <a href="burger.html" class="text-white bg-red-500 font-bold py-3 px-3 space-y-5 rounded-xl text-lg:text-1xl">Beast Deal</a><br>
+                    <img src="https://img.freepik.com/premium-photo/beef-burger-isolated-white-background_707237-258.jpg?w=2000"
+                    alt="chiecken_burger" 
+                    class="h-110 w-80 py-5">
+                    <h1 class="text-2xl font-mono">Burger</h1>
+
+                    <p class="text-red-900 text-2xl font-bold py-3">130</p>
+
+                    <div class="border-1 border-drashed flex justify-between  h-10 w-80">
+                        <div class="mx-1 h-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                            </svg>
+                            </div>
+
+                        <div class="text-2xl items-center">1</div>
+                        <div class="text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+<!---->
+
+            <div class="flex  py-4 border- border-drashed h-165 w-90 justify-center shadow-2xl">
+             <div class="py-5">
+                    <a href="pizza.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3 space-y-5 rounded-xl">Beast Deal</a><br>
+                    <img src="https://static.vecteezy.com/system/resources/previews/038/184/604/large_2x/ai-generated-top-view-of-pizza-isolated-on-white-background-for-restaurant-menu-advertising-delivery-banner-photo.jpg"
+                    alt="chicken_pizza" 
+                    class="h-110 w-80 py-5">
+                    <h1 class="text-2xl font-mono">Pizza</h1>
+
+                    <p class="text-red-900 text-2xl font-bold py-3">200</p>
+
+                    <div class="border-1 border-drashed flex justify-between  h-10 w-80">
+                        <div class="mx-1 h-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                            </svg>
+                            </div>
+
+                        <div class="text-2xl items-center">1</div>
+                        <div class="text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+<!---->
+
+             <div class="flex  py-4 mx-3 border- border-drashed h-165 w-90 justify-center shadow-2xl">
+             <div class="py-5">
+                    <a href="burger.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3 space-y-5 rounded-xl">Beast Deal</a><br>
+                    <img src="https://img.freepik.com/free-photo/sandwich_1339-2319.jpg"
+                    alt="chicken_sandwich"
+                    class="h-110 w-80 py-5">
+                    <h1 class="text-2xl font-mono">Sandwich</h1>
+
+                    <p class="text-red-900 text-2xl font-bold py-3">100</p>
+
+                    <div class="border-1 border-drashed flex justify-between  h-10 w-80">
+                        <div class="mx-1 h-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                            </svg>
+                            </div>
+
+                        <div class="text-2xl items-center">1</div>
+                        <div class="text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+<!---->
+             <div class="flex  py-4 mx-3 border- border-drashed h-165 w-90 justify-center shadow-2xl">
+             <div class="py-5">
+                    <a href="fries.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3 space-y-5 rounded-xl">Beast Deal</a><br>
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.UP7jIdgAh_o4aPVDGgIqTQHaH_?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Frich_fries" 
+                    class="h-110 w-80 py-5">
+                    <h1 class="text-2xl font-mono">Frich Fries</h1>
+
+                    <p class="text-red-900 text-2xl font-bold py-3">70</p>
+
+                    <div class="border-1 border-drashed flex justify-between  h-10 w-80">
+                        <div class="mx-1 h-1 font-bold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
+                            </svg>
+                            </div>
+
+                        <div class="text-2xl items-center">1</div>
+                        <div class="text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="flex justify-center py-4">
+        <a href="burger.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3 space-y-5 rounded-xl">Shop Details</a><br>
+    </div>
+</section>
+
+<!--section -6-->
+
+<section class="h-full w-full">
+
+    <div class=" justify-center gap-4 grid md:grid-cols-1 lg:mx-30 lg:grid-cols-2">
+
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="h-100 w-200" >
+           <div class="absolute left-10 top-18 ">
+            <h2 class="text-xl lg:text-3xl ">It’s Wine O'Clock!</h2>
+            <h1 class="font-bold text-xl lg:text-4xl">Great Deals on</h1>
+            <h1 class=" font-bold text-2xl lg:text-6xl">Selected Wines</h1>
+            <p class="py-3 text-lg lg:text-1xl ">I'm a paragraph. Click here to add your own text<br> and edit me. Let your users get to know you.</p>
+            <a href="shop.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3  rounded-xl">Shop Now</a><br>
+           </div>
+        </div>
+
+        <div class="relative ">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="h-100 w-120">
+            <div class="absolute top-18 left-10 text-white flex flex-col ">
+                <h2 class=" my-3 text-xl lg:text-2xl">Deal of the Week</h2>
+                <h1 class=" font-bold my-2 text-3xl lg:text-8xl">40% off</h1>
+                <h1 class=" mb-8 text-xl lg:text-2xl">Cleaning Supplies</h1>
+                <a href="shop.html" class="text-white text-1xl w-30 bg-red-500 font-bold py-3 px-3  rounded-xl">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--section -7-->
+
+<section class="block h-full w-full py-5 mx-3">
+    <h1 class="text-2xl tracking-widest font-bold font-mono mb-5">Most Popular Categories</h1>
+
+    <div class=" justify-center grid sm:grid-cols-2 md:gird-cols-2 lg:grid-cols-4"> 
+
+        
+            <div class=" justify-center p-3"> 
+            <img src="https://plus.unsplash.com/premium_photo-1664478294917-c11274b9ce79?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">sharwarma</p>    
+        </div>
+        
+
+         
+            <div class=" justify-center p-3">
+            <img src="https://vegecravings.com/wp-content/uploads/2017/02/Vada-Pav-Recipe-Step-By-Step-Instructions-3.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Vadu pav</p>    
+        </div>
+        </td>
+
+         
+            <div class=" justify-center p-3">
+            <img src="https://img.freepik.com/premium-psd/delicious-burger-transparent-psd_1121752-10415.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Burger</p>    
+        </div>
+        
+ 
+    
+            <div class=" justify-center p-3">
+            <img src="https://img.freepik.com/premium-psd/pizza-wooden-board-top-view_219493-32.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Pizza</p>    
+        </div>
+        
+    
+            <div class=" justify-center p-3">
+            <img src="https://static.vecteezy.com/system/resources/previews/023/300/310/large_2x/sandwiches-close-up-photo.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Sandwich</p>    
+        </div>
+        
+          
+            <div class=" justify-center p-3">
+            <img src="https://img.freepik.com/premium-photo/three-milkshake-cups-with-one-that-has-sprinkles-it_1114736-5009.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Milkshake</p>    
+        </div>
+        
+        
+            <div class=" justify-center p-3">
+            <img src="https://images7.alphacoders.com/102/thumb-1920-1028579.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">SeaFood</p>    
+        </div>
+        
+          
+            <div class=" justify-center p-3">
+            <img src="https://purendesi.in/wp-content/uploads/2023/04/Momos-Calories.jpg"
+            alt ="shawarma" class="h-60 w-70 rounded-full">
+        <p class="text-2xl font-bold text-center">Momos</p>    
+        </div>
+        
+
+</div>
+</section>
+
+<!--section -8 -->
+
+<section class="relative h-full w-auto">
+        
+        <img src="https://static.wixstatic.com/media/c837a6_e0bc54d0bb0b429590e8f82d575a661f~mv2.jpg/v1/fill/w_1225,h_683,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_e0bc54d0bb0b429590e8f82d575a661f~mv2.jpg"
+        class="h-full w-full">
+        <div class="absolute  top-10 text-white lg:right-90 lg:top-50">
+        <h1 class="font-bold mb-3 lg:text-2xl ">Save Time & Money</h1>
+        <p class="mb-3  font-bold lg:text-6xl lg:leading-20"> Shop With Us<br> on the Go</p>
+        <h3 class="text-1xl mb-3">Your weekly shopping routine, at your<br> door in just a click</h3>
+        <div class="flex">
+            <img src="https://static.wixstatic.com/media/c837a6_71e02b9a534c442e8bff4121c61dc9f2~mv2.png/v1/fill/w_314,h_112,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Appstore_2.png"
+            class="h-15">
+            <img src="https://static.wixstatic.com/media/c837a6_f8a32e83150d47d9b3b06eb8ab422edc~mv2.png/v1/fill/w_346,h_112,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Google%20Play.png"
+            class="h-15">
+        </div>
+        </div>
+        <div class="absolute z-10 left-70 top-30">
+          <img src="https://static.wixstatic.com/media/84770f_f1e4bd39ca074a538d316813c8699cf7~mv2.png/v1/fill/w_472,h_1038,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Artboard.png"
+        class="hidden h-200 w-100 rounded-lg shadow-xl md:hidden xl:block">
+        </div>
+        
+    
+</section>
+
+<!--section -9-->
+
+<section class="relative h-auto w-auto lg:top-30">
+
+    <div class=" grid md:gird-cols-1 lg:mx-20 lg:grid-cols-2 ">
+
+        <div class="relative ">
+            <img src="https://static.wixstatic.com/media/c837a6_dcb97d2296b34b98858649b8cb74b683~mv2.jpg/v1/fill/w_585,h_564,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_dcb97d2296b34b98858649b8cb74b683~mv2.jpg"
+           class="h-100 w-140 object-cover" >
+           <div class="absolute left-10 top-18 ">
+            <h2 class=" mb-3 md:text-1xl lg:text-3xl">Taste of Italy</h2>
+            <h1 class=" font-bold mb-3 md:text-2xl lg:text-4xl">Great Deals on Your</h1>
+            <h1 class=" font-bold mb-5 md:text-3xl lg:text-7xl">Favorite<br> Pastas</h1>
+
+            <a href="shop.html" class="text-white text-1xl bg-red-500 font-bold py-3 px-3  rounded-xl">Shop Now</a><br>
+           </div>
+           
+        </div>
+
+        <div class="relative ">
+            <img src="https://static.wixstatic.com/media/c837a6_564931f091d34dd28dda690375e97842~mv2.jpg/v1/fill/w_584,h_564,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_564931f091d34dd28dda690375e97842~mv2.jpg"
+            class="h-100 w-140 object-cover">
+            <div class="absolute top-18 left-10  flex flex-col ">
+                <h2 class=" my-3 md:text-1xl lg:text-2xl">Deal of the Week</h2>
+                <h1 class=" font-bold my-2 md:text-4xl lg:text-8xl">30% off</h1>
+                <h1 class=" mb-8 md:text-xl lg:text-2xl">Cereal Brands</h1>
+                <a href="shop.html" class="text-white text-1xl w-30 bg-red-500 font-bold py-3 px-3  rounded-xl">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--section -10-->
+<section class=" h-full w-full relative lg:top-50 ">
+    <div class="relative">
+    <img src="https://plus.unsplash.com/premium_photo-1683657860029-05a5415fa618?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    class="h-180 w-full ">
+    <div class="absolute top-50 h-auto w-auto text-white font-bold items-center lg:right-90">
+    <h1 class="">Subscribe & Save</h1>
+    <h2 class="font mb-3 md:text-4xl lg:text-8xl">20% off</h2>
+    <p class="mb-3 md:text-1xl lg:text-3xl">Your Next Order</p>
+    <label class="mb-3 md:text-2xl lg:text-4xl">Email</label>
+    <br>
+    <input type="email" placeholder="Your email" class="bg-black text-white rounded-xl p-5 md:w-180 lg:w-200"><br>
+    <input type="checkbox" class="mb-5" >Yes, subscribe me to new letter.<br>
+    <a href="shop.html" class="text-white text-1xl bg-red-500 font-bold  px-3 p-3 rounded-xl">subscribe</a><br>
+    </div>
+    </div>
+</section>
+
+<!--section -11-->
+<br><br><br><br><br><br><br><br>
+     <footer class="bg-red-500 w-full text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-12
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- COMPANY / SUPPORT -->
+    <div>
+      <h1 class="font-bold text-3xl lg:text-4xl mb-4">
+        Hot Zone
+      </h1>
+
+      <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+        Need Help?
+      </h2>
+
+      <p class="text-base lg:text-lg">
+        Visit our Customer Support
+      </p>
+
+      <p class="text-base lg:text-lg">
+        for assistance or call us at
+      </p>
+
+      <h3 class="font-bold text-xl lg:text-2xl mt-3 mb-5">
+        123-456-890
+      </h3>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#" aria-label="Facebook">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png"
+            alt="Facebook"
+            class="h-10 w-10 object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="https://audience-av.com/wp-content/uploads/2018/06/instagram_logo_trans_crop.png"
+            alt="Instagram"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img
+            src="https://i.pinimg.com/originals/71/2f/38/712f38a89036a0899889d8ca7febdbc6.png"
+            alt="Pinterest"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Social Media">
+          <img
+            src="https://images.freekaamaal.com/post_images/1648711733.webp"
+            alt="Social Media"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Menu
+      </h1>
+
+      <!-- Food -->
+      <a
+        href="food.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Food
+      </a>
+
+
+      <!-- Western Cuisine -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Western Cuisine
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="burger.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Burger
+          </a>
+
+          <a href="sandwich.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sandwich
+          </a>
+
+          <a href="pizza.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Pizza
+          </a>
+
+          <a href="shawarma.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Shawarma
+          </a>
+
+          <a href="momos.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Momos
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Snacks -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Snacks
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="vada.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Vada Pav
+          </a>
+
+          <a href="sea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sea Food
+          </a>
+
+          <a href="sushi.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sushi
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Beverages -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Beverages
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="mojiot.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Mojito
+          </a>
+
+          <a href="milk.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Milk Shake
+          </a>
+
+          <a href="ice.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Ice Cream
+          </a>
+
+          <a href="tea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Tea & Coffee
+          </a>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- INFO -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Info
+      </h1>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        FAQ
+      </a>
+
+      <a
+        href="about.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        About Us
+      </a>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Customer Support
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-red-400 text-center py-5 px-4">
+    <p class="text-sm md:text-base">
+      © 2026 Hot Zone. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+     
+</body>
+</html>
+
+
+
+
+
