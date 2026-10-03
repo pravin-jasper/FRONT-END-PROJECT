@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Faq</title>
+    
+</head>
+<body>
+
+  <!--section -1 -->
+
+    <section class="h-30 w-auto bg-red-500">
+
+    <div class="flex justify-between items-center ">
+        <div>
+        <h1 class="text-4xl py-5 text-white mx-5 font-serif"> Hot Zone</h1>
+        </div>
+        <div class="text-white font-bold justify-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+
+        </div>
+
+        <div class="flex gap-4 text-white font-bold mx-4">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+    </div>
+
+</section>
+
+ <!--section -2-->
+
+<nav class=" bg-white shadow-md">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <div class="relative group hidden md:flex space-x-6">
+          <a href="index.html" class="text-xl   hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Home
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5"></span>
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-[#2A3B24] 
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+           
+          </div>
+        </div>
+
+            <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <a href="food.html" class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Food
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          
+        </div>
+
+             <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Western Cusinie
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="burger.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Burger</a>
+            <a href="pizza.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Pizza</a>
+            <a href="momos.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Momos</a>
+            <a href="sandwich.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sandwich</a>
+            <a href="shawarma.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Shawarma</a>
+          </div>
+        </div>
+
+         <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Snacks
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="vada.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Vada Pav</a>
+            <a href="sea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sea Food</a>
+            <a href="sushi.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sushi</a>
+            
+            
+          </div>
+        </div>
+
+           <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Beverages
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="mojiot.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Mojiot</a>
+            <a href="milk.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Milk Shark</a>
+            <a href="ice.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Ice Cream</a>
+            <a href="tea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Tea & Coffee</a>
+            
+          </div>
+        </div>
+       
+
+      <!-- Desktop Button -->
+      <a href="index.html" class="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+        Shop
+      </a>
+      <label for="menuToggle" class="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </label>
+
+    </div>
+
+   <!-- Mobile Menu Toggle -->
+<input type="checkbox" id="menuToggle" class="hidden peer" />
+
+<!-- Mobile Menu -->
+<div
+  class="hidden peer-checked:flex md:hidden flex-col bg-white px-6 py-4 gap-4 shadow-lg"
+>
+  
+  <!-- Home -->
+  <a
+    href="index.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Home
+  </a>
+
+  <!-- Food -->
+  <a
+    href="food.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Food
+  </a>
+
+
+  <!-- Western Cuisine -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Western Cuisine
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+      <a href="burger.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Burger
+      </a>
+
+      <a href="pizza.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Pizza
+      </a>
+
+      <a href="momos.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Momos
+      </a>
+
+      <a href="sandwich.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sandwich
+      </a>
+
+      <a href="shawarma.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Shawarma
+      </a>
+    </div>
+  </details>
+
+
+  <!-- Snacks -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Snacks
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="vada.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Vada Pav
+      </a>
+
+      <a href="sea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sea Food
+      </a>
+
+      <a href="sushi.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sushi
+      </a>
+
+      <a href="meat.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Meat
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Beverages -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Beverages
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="mojiot.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Mojito
+      </a>
+
+      <a href="milk.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Milk Shake
+      </a>
+
+      <a href="ice.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Ice Cream
+      </a>
+
+      <a href="tea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Tea & Coffee
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Button -->
+  <a
+    href="index.html"
+    class="mt-2 bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-700 text-center transition"
+  >
+    Get Started
+  </a>
+
+</div>
+  </nav>
+
+  <!--section -2-->
+
+
+    <section class="mx-auto max-w-7xl px-6 py-24">
+      <div class="max-w-3xl">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-wider text-red-600">
+          Customer Support
+        </p>
+
+        <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
+          Support your customers
+          <span class="text-red-600">better.</span>
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+          Give your customers fast, reliable support with a simple and
+          powerful support experience built for modern businesses.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button class="rounded-lg bg-red-500 px-6 py-3 font-medium text-white hover:bg-red-700">
+            Start for free
+          </button>
+
+          <button class="rounded-lg border border-gray-300 px-6 py-3 font-medium hover:bg-gray-50">
+            Contact us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="border-y border-gray-200 bg-gray-50">
+      <div class="mx-auto max-w-7xl px-6 py-20">
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <div class="rounded-xl border border-gray-200 bg-white p-6">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
+              💬
+            </div>
+            <h3 class="text-lg font-semibold">Live Chat</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-600">
+              Talk to customers in real time and resolve their questions quickly.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-gray-200 bg-white p-6">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-green-100 text-green-600">
+              ✓
+            </div>
+            <h3 class="text-lg font-semibold">Fast Resolution</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-600">
+              Organize requests and solve customer issues without unnecessary delays.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-gray-200 bg-white p-6">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-purple-100 text-purple-600">
+              ⚡
+            </div>
+            <h3 class="text-lg font-semibold">Simple Setup</h3>
+            <p class="mt-2 text-sm leading-6 text-gray-600">
+              Get your support system running quickly with an easy-to-use interface.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mx-auto max-w-7xl px-6 py-24 text-center">
+      <h2 class="text-3xl font-bold sm:text-4xl">
+        Ready to improve your support?
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-xl text-gray-600">
+        Start providing a better customer experience today.
+      </p>
+
+      <button class="mt-8 rounded-lg bg-red-500 px-7 py-3 font-medium text-white hover:bg-red-700">
+        Get Started
+      </button>
+    </section>
+  
+ <footer class="bg-red-500 w-full text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-12
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- COMPANY / SUPPORT -->
+    <div>
+      <h1 class="font-bold text-3xl lg:text-4xl mb-4">
+        Hot Zone
+      </h1>
+
+      <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+        Need Help?
+      </h2>
+
+      <p class="text-base lg:text-lg">
+        Visit our Customer Support
+      </p>
+
+      <p class="text-base lg:text-lg">
+        for assistance or call us at
+      </p>
+
+      <h3 class="font-bold text-xl lg:text-2xl mt-3 mb-5">
+        123-456-890
+      </h3>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#" aria-label="Facebook">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png"
+            alt="Facebook"
+            class="h-10 w-10 object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="https://audience-av.com/wp-content/uploads/2018/06/instagram_logo_trans_crop.png"
+            alt="Instagram"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img
+            src="https://i.pinimg.com/originals/71/2f/38/712f38a89036a0899889d8ca7febdbc6.png"
+            alt="Pinterest"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Social Media">
+          <img
+            src="https://images.freekaamaal.com/post_images/1648711733.webp"
+            alt="Social Media"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Menu
+      </h1>
+
+      <!-- Food -->
+      <a
+        href="food.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Food
+      </a>
+
+
+      <!-- Western Cuisine -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Western Cuisine
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="burger.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Burger
+          </a>
+
+          <a href="sandwich.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sandwich
+          </a>
+
+          <a href="pizza.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Pizza
+          </a>
+
+          <a href="shawarma.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Shawarma
+          </a>
+
+          <a href="momos.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Momos
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Snacks -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Snacks
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="vada.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Vada Pav
+          </a>
+
+          <a href="sea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sea Food
+          </a>
+
+          <a href="sushi.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sushi
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Beverages -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Beverages
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="mojiot.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Mojito
+          </a>
+
+          <a href="milk.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Milk Shake
+          </a>
+
+          <a href="ice.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Ice Cream
+          </a>
+
+          <a href="tea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Tea & Coffee
+          </a>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- INFO -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Info
+      </h1>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        FAQ
+      </a>
+
+      <a
+        href="about.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        About Us
+      </a>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Customer Support
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-red-400 text-center py-5 px-4">
+    <p class="text-sm md:text-base">
+      © 2026 Hot Zone. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+</body>
+</html>
