@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Burger</title>
+    
+</head>
+<body>
+
+  <!--section -1 -->
+
+    <section class="h-30 w-auto bg-red-500">
+
+    <div class="flex justify-between items-center ">
+        <div>
+        <h1 class="text-4xl py-5 text-white mx-5 font-serif"> Hot Zone</h1>
+        </div>
+        <div class="text-white font-bold justify-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+
+        </div>
+
+        <div class="flex gap-4 text-white font-bold mx-4">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+    </div>
+
+</section>
+
+ <!--section -2-->
+
+<nav class=" bg-white shadow-md">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <div class="relative group hidden md:flex space-x-6">
+          <a href="index.html" class="text-xl   hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Home
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5"></span>
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-[#2A3B24] 
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+           
+          </div>
+        </div>
+
+            <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <a href="food.html" class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Food
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          
+        </div>
+
+             <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Western Cusinie
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="burger.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Burger</a>
+            <a href="pizza.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Pizza</a>
+            <a href="momos.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Momos</a>
+            <a href="sandwich.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sandwich</a>
+            <a href="shawarma.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Shawarma</a>
+          </div>
+        </div>
+
+         <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Snacks
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="vada.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Vada Pav</a>
+            <a href="sea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sea Food</a>
+            <a href="sushi.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sushi</a>
+            
+            
+          </div>
+        </div>
+
+           <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Beverages
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="mojiot.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Mojiot</a>
+            <a href="milk.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Milk Shark</a>
+            <a href="ice.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Ice Cream</a>
+            <a href="tea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Tea & Coffee</a>
+            
+          </div>
+        </div>
+       
+
+      <!-- Desktop Button -->
+      <a href="index.html" class="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+        Shop
+      </a>
+      <label for="menuToggle" class="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </label>
+
+    </div>
+
+   <!-- Mobile Menu Toggle -->
+<input type="checkbox" id="menuToggle" class="hidden peer" />
+
+<!-- Mobile Menu -->
+<div
+  class="hidden peer-checked:flex md:hidden flex-col bg-white px-6 py-4 gap-4 shadow-lg"
+>
+  
+  <!-- Home -->
+  <a
+    href="index.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Home
+  </a>
+
+  <!-- Food -->
+  <a
+    href="food.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Food
+  </a>
+
+
+  <!-- Western Cuisine -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Western Cuisine
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+      <a href="burger.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Burger
+      </a>
+
+      <a href="pizza.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Pizza
+      </a>
+
+      <a href="momos.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Momos
+      </a>
+
+      <a href="sandwich.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sandwich
+      </a>
+
+      <a href="shawarma.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Shawarma
+      </a>
+    </div>
+  </details>
+
+
+  <!-- Snacks -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Snacks
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="vada.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Vada Pav
+      </a>
+
+      <a href="sea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sea Food
+      </a>
+
+      <a href="sushi.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sushi
+      </a>
+
+      <a href="meat.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Meat
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Beverages -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Beverages
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="mojiot.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Mojito
+      </a>
+
+      <a href="milk.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Milk Shake
+      </a>
+
+      <a href="ice.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Ice Cream
+      </a>
+
+      <a href="tea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Tea & Coffee
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Button -->
+  <a
+    href="index.html"
+    class="mt-2 bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-700 text-center transition"
+  >
+    Get Started
+  </a>
+
+</div>
+  </nav>
+
+    <!--section -3 -->
+    <section class="h-full w-full">
+         <img src="https://images.popeyes.in/hero-banner-2@2x.jpg"
+        alt="burgerimage"
+        class="md:h-full md:w-50 lg:h-177 lg:w-full md:object-cover lg:object-cover">
+
+    </section>
+
+    <!--section -4 -->
+    <section class="h-full w-full">
+
+      <div class="text-center py-5 font-bold font-serif md:text-xl lg:text-6xl">
+        <h1>Recommended</h1>
+      </div>
+      <div class="justify-center grid md:grid-cols-1 lg:grid-cols-4 ">
+
+         <div class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/7qnWQbrV6e4zaYdHPpNifa/2703cd313c6bdadcb407a86dfeeb8fd7/D-PR00002955.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Gold Edition – Chicken Zinger & Fries</h1>
+                <hr>
+                <p class="mb-7">Zinger Dunked in Sauce with Bun & Reg Fries Allergen Wheat,Soy,Milk| 902 Kcal..</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>
+         
+           <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/kD0f6H7HAq0EMwgOjJDbM/ffbc789e612f72a85e0da0aea320379e/D-PR00001002.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Classic Zinger Box</h1>
+                <hr>
+                <p class="mb-7">"1 Classic Zinger, 2 Hot Wings, Reg Fries, Pepsi Allergen Wheat, Soy, Milk| 1227..</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+          <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/5Ko37VaX11BbZVO3InwYVD/544afa160c65bc90f72e4dce310f8aab/KFC-APP-PLP-Zinger-tandoori-Box-1160-X-870-15SEPT-NEW-F1.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Tandoori Zinger Box</h1>
+                <hr>
+                <p class="mb-7">Tandoori Zinger Box Allergen Wheat, Soy, Milk| 1500 Kcal| Wt 705 gm..</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+           <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00003531.jpg?ver=79.32"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Double Chicken Dynamite Snack Box</h1>
+                <hr>
+                <p class="mb-7">Double Chicken Dynamite with Regular Popcorn and Pepsi PET.</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+      </div>
+    </section>
+<br><br>
+
+    <!--section -5 -->
+
+    <section class="relative">
+      <div class="text-center font-sertif font-bold md:text-3xl lg:text-6xl">
+        <h1>Burger Item</h1>
+      </div>
+      <br><br>
+         <div class="grid md:gird-cols-2 lg:grid-cols-4">
+          
+            <div class="relative md:sticky md:top-4 self-start row-span-6">
+              
+              
+                <div class=" py-5 flex">
+                <img src="img/hz.jpeg" class="h-30 w-30 rounded-full">
+                <h1 class="p-5 font-bold mb-8 md:text-2xl lg:text-6xl ">Burger Menu</h1>
+                </div>
+
+                <div class="flex flex-col  justify-center items-center">
+                    
+                    <a href="#veg" class="text-3xl mb-10 hover:text-orange-300">Veg Burger</a>
+                    <a href="#non" class="text-3xl mb-10 hover:text-orange-300">Non-Veg Burger</a>
+                    <a href="#comb" class="text-3xl mb-10 hover:text-orange-300">Combo</a>
+                    <a href="#pes" class="text-3xl mb-10 hover:text-orange-300">Pepsi</a>
+                    
+                </div>
+
+
+            </div>
+
+       <div id="veg" class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K1157.jpg?ver=79.27"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">2 Chana Burgers</h1>
+                <hr>
+                <p class="mb-3">Try New 2 units of Delicious Chana Burger with a unique Indian Chatpata</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.180</p>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c1795d39947c2f63d9b90e/e1815ae6-6d56-4cd1-b783-d205caf93add/sweetpotatoburger_1+(1+of+1).jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Perfect Hamburger </h1>
+                <hr>
+                <p class="mb-3">Hambuger vegetables and mint mayonnaise. units of Delicious hamburger Burger  ...</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.130</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://www.breannarecipes.com/wp-content/uploads/2025/08/ihpa6pvmm33a175n5sph.webp"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <img src="https://online.kfc.co.in/static/media/plus-white.ff4be5c0.svg" class="h-15 w-15">
+                <h1 class="font-bold mb-1 tracking-wider">Panner Burgers</h1>
+                <hr>
+                <p class="mb-3">Grilled paneer patty with fresh vegetables and mint mayonnaise. units of Delicious panner Burger  ...</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.120</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tiimg.tistatic.com/fp/1/008/015/hygienic-and-mouth-watering-veg-aloo-tikki-burger-055.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Veg Aloo Tikki Burger</h1>
+                <hr>
+                <p class="mb-3">A crispy potato patty with lettuce, tomato, onion, and creamy sauce in a sesame seed bun.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.130</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/tasty-green-curry-tofu-burger-isolated-white-background_787273-67102.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Mixed Vegetable Burger</h1>
+                <hr>
+                <p class="mb-3">A only Vegtable patty topped with lettuce, tomato, onion, cheese.</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.90</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://wallpapers.com/images/hd/vegan-burger-png-05042024-wiytlin75f5bmagg.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Falafel Burger</h1>
+                <hr>
+                <p class="mb-3">Crispy falafel patty with lettuce, cucumber, tomato, and tahini sauce.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.140</p>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/2v3CehILmqa5edNMvkIfNC/e52b31242d699db5a9e550cbcfae398e/Burgers-Mexican-Zinger-Pro-Burger-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Zinger Pro Burger</h1>
+                <hr>
+                <p class="mb-3">Premium burger with crunchy chicken, Mexican Habanero sauce, cheese,</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.200</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/4hXrsUTji88odWH6jrnMRK/9bcd3c8ca97d86ba2db2ec8f752f4b77/Burgers-Caribbean_Spicy_Zinger_Burger-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Spicy Zinger Burger</h1>
+                <hr>
+                <p class="mb-3">Relish the spicy zinger Allergen Wheat,Soy,Milk| 439 Kcal | Wt 215 g</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.230</p>
+            </div>
+
+            <div id="non" class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/1gRTrPUhdDUaTqhorx1RmW/38f1455dbbb519c0f84bf99851ea16c5/Burgers-American-Classic-Zinger-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Classic Zinger</h1>
+                <hr>
+                <p class="mb-3">Classic Zinger-lettuce,mayo & Zinger patty Allergen Wheat,Soy,Milk| 971 Kcal..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.230</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/5ROn2X9jNojdKJEYYclGjO/acef29e79344a97e7d3737998f9edb0d/American-classic-burger-with-cheese.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Classic Zinger-with Cheese</h1>
+                <hr>
+                <p class="mb-3">Cheese slice filled in Classic Zinger Burger Allergen Wheat,Soy,Milk| 648Kcal..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.180</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/tandoori-chicken-burger-white-background_729149-59469.jpg?w=2000"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Indian Tandoori Zinger Burger</h1>
+                <hr>
+                <p class="mb-3">Zinger Burger with Onions & Tangy sauce Allergen Wheat,Soy,Milk| 902 Kcal </p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.200</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/1qJeXmJNuNiqRFJUFOhVCI/d61f778426bc5aa5417fbf3ef32cd983/D-K291.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Longer Chicken Burger</h1>
+                <hr>
+                <p class="mb-3">Chicken Longer Burger Allergen Wheat,Soy,Milk| 356 Kcal | Wt 120 g</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.220</p>
+            </div>
+
+            <div id="comb"class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/5FywdDYIqEMLxcM1wybSNm/d7b7e35cc7471ae6274fcf278f4602f6/Burgers-Buddy-Meal-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Buddy Meal</h1>
+                <hr>
+                <p class="mb-3">2 Chicken Zingers & Med Popcorn Allergen Wheat, Soy, Milk| 1088 Kcal</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.280</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/3bEGCEgx7HIZzzfn7RJ4Yr/6fbedb4a3bf38c7a4b694ceb94f722e4/BURGER_Family-Feast_Delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Family Feast</h1>
+                <hr>
+                <p class="mb-3">Family Deal of 3 chicken zingers, med popcorn, med fries & 1 Pepsi 475ml</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.300</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/IDAdEggvXi0gOPU2QK20V/4edd133b1fd2fbff1729989470cb1c2f/Burgers-American-Classic-Zinger-Mojito-Combo-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Classic Zinger Mojito Combo</h1>
+                <hr>
+                <p class="mb-3">"Mojito Bottle with Classic Chicken Zinger Allergen Wheat, Soy, Milk| 708..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.400</p>
+            </div>
+
+            <div id="pes" class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/5NspYMCoseQDpETpR8jD5U/c8f5d9eccaa169c34835e87c01e79265/Mexican-Zinger-Pro-Burger-_-Popcorn-Meal.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Zinger Pro Burger & Popcorn Meal</h1>
+                <hr>
+                <p class="mb-3">Mexican Zinger burger, Med Popcorn & Pepsi Allergen Wheat, Soy, Milk| 1345..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.240</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.ctfassets.net/wtodlh47qxpt/1Bc9FEKyQ3QYRVLJkPlS6Y/0a40cee3812705835ccb5fda26cad6d2/Burgers-Caribbean-Spicy-Zinger-Burger-_-Popcorn-Meal-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Spicy Zinger Burger & Popcorn Meal</h1>
+                <hr>
+                <p class="mb-3">Caribbean Zinger with Med Popcorn & Pepsi Allergen Wheat, Soy, Milk| 1255...</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.420</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00003530.jpg?ver=79.27"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Double Chicken Dynamite Meal</h1>
+                <hr>
+                <p class="mb-3">Double Chicken Dynamite with Medium Fries and Pepsi PET.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.380</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--section -6 -->
+
+    <section class="w-full py-10 px-4 sm:px-6 lg:px-10">
+  <div class="text-center mb-10">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-serif">
+      Offer
+    </h1>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="shadow-xl rounded-lg p-5 flex flex-col">
+      <img
+        src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00003530.jpg?ver=79.27"
+        alt="Double Chicken Dynamite Meal"
+        class="w-full h-64 sm:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider">
+        Double Chicken Dynamite Meal
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm flex-grow">
+        Double Chicken Dynamite with Medium Fries and Pepsi PET.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-red-600 p-[3px]">
+            <div class="h-full w-full bg-red-600 rounded-sm"></div>
+          </div>
+          <span>Non-Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-lg line-through text-gray-500">Rs.380</span>
+          <span class="text-xl text-red-500 font-bold">Rs.300</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="shadow-xl rounded-lg p-5 flex flex-col">
+      <img
+        src="https://img.freepik.com/premium-photo/tandoori-chicken-burger-white-background_729149-59469.jpg?w=2000"
+        alt="Indian Tandoori Zinger Burger"
+        class="w-full h-64 sm:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider">
+        Indian Tandoori Zinger Burger
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm flex-grow">
+        Zinger Burger with Onions & Tangy sauce Allergen Wheat, Soy, Milk | 902 Kcal
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-red-600 p-[3px]">
+            <div class="h-full w-full bg-red-600 rounded-sm"></div>
+          </div>
+          <span>Non-Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-lg line-through text-gray-500">Rs.200</span>
+          <span class="text-xl text-red-500 font-bold">Rs.150</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="shadow-xl rounded-lg p-5 flex flex-col">
+      <img
+        src="https://images.ctfassets.net/wtodlh47qxpt/1Bc9FEKyQ3QYRVLJkPlS6Y/0a40cee3812705835ccb5fda26cad6d2/Burgers-Caribbean-Spicy-Zinger-Burger-_-Popcorn-Meal-delivery.jpg?h=600&w=800&fm=webp&fit=fill"
+        alt="Spicy Zinger Burger"
+        class="w-full h-64 sm:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider">
+        Spicy Zinger Burger & Popcorn Meal
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm flex-grow">
+        Caribbean Zinger with Med Popcorn & Pepsi Allergen Wheat, Soy, Milk | 1255 Kcal
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-red-600 p-[3px]">
+            <div class="h-full w-full bg-red-600 rounded-sm"></div>
+          </div>
+          <span>Non-Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-lg line-through text-gray-500">Rs.420</span>
+          <span class="text-xl text-red-500 font-bold">Rs.380</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="shadow-xl rounded-lg p-5 flex flex-col">
+      <img
+        src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K1157.jpg?ver=79.27"
+        alt="2 Chana Burgers"
+        class="w-full h-64 sm:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider">
+        2 Chana Burgers
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm flex-grow">
+        Try New 2 units of Delicious Chana Burger with a unique Indian Chatpata taste.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-lime-600 p-[3px]">
+            <div class="h-full w-full bg-lime-600 rounded-sm"></div>
+          </div>
+          <span>Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-lg line-through text-gray-500">Rs.180</span>
+          <span class="text-xl text-red-500 font-bold">Rs.120</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!--section -7 -->
+    
+    <section class=" px-6">
+        <div class="max-w-8xl mx-auto  text-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-black mb-8">Chef</h2>
+
+            <div class="md:flex items-center gap-8">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://www.bing.com/th/id/OIP.NwYtdDhJLrEjVTjPtsSrQAHaEK?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=ImgAns&rm=2"
+                         alt="Profile"
+                         class="rounded-full mx-auto">
+                </div>
+
+                <div class="md:w-2/3">
+                    <p class="text-lg text-black tracking-wider">
+                    Our chef brings years of culinary expertise, creativity, and passion to every dish we serve. With a commitment to using fresh, high-quality ingredients, each recipe is carefully crafted to deliver exceptional taste and presentation. From signature burgers to delicious sides and desserts, our chef blends traditional flavors with modern
+                    techniques to create a memorable dining experience. Every meal is prepared with care, ensuring quality, freshness, and satisfaction in every bite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!--section -9 -->
+    
+     <footer class="bg-red-500 w-full text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-12
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- COMPANY / SUPPORT -->
+    <div>
+      <h1 class="font-bold text-3xl lg:text-4xl mb-4">
+        Hot Zone
+      </h1>
+
+      <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+        Need Help?
+      </h2>
+
+      <p class="text-base lg:text-lg">
+        Visit our Customer Support
+      </p>
+
+      <p class="text-base lg:text-lg">
+        for assistance or call us at
+      </p>
+
+      <h3 class="font-bold text-xl lg:text-2xl mt-3 mb-5">
+        123-456-890
+      </h3>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#" aria-label="Facebook">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png"
+            alt="Facebook"
+            class="h-10 w-10 object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="https://audience-av.com/wp-content/uploads/2018/06/instagram_logo_trans_crop.png"
+            alt="Instagram"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img
+            src="https://i.pinimg.com/originals/71/2f/38/712f38a89036a0899889d8ca7febdbc6.png"
+            alt="Pinterest"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Social Media">
+          <img
+            src="https://images.freekaamaal.com/post_images/1648711733.webp"
+            alt="Social Media"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Menu
+      </h1>
+
+      <!-- Food -->
+      <a
+        href="food.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Food
+      </a>
+
+
+      <!-- Western Cuisine -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Western Cuisine
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="burger.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Burger
+          </a>
+
+          <a href="sandwich.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sandwich
+          </a>
+
+          <a href="pizza.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Pizza
+          </a>
+
+          <a href="shawarma.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Shawarma
+          </a>
+
+          <a href="momos.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Momos
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Snacks -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Snacks
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="vada.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Vada Pav
+          </a>
+
+          <a href="sea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sea Food
+          </a>
+
+          <a href="sushi.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sushi
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Beverages -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Beverages
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="mojiot.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Mojito
+          </a>
+
+          <a href="milk.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Milk Shake
+          </a>
+
+          <a href="ice.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Ice Cream
+          </a>
+
+          <a href="tea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Tea & Coffee
+          </a>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- INFO -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Info
+      </h1>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        FAQ
+      </a>
+
+      <a
+        href="about.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        About Us
+      </a>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Customer Support
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-red-400 text-center py-5 px-4">
+    <p class="text-sm md:text-base">
+      © 2026 Hot Zone. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+</body>
+</html>
