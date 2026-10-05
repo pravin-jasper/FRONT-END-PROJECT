@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Milkshake</title>
+    
+</head>
+<body>
+
+  <!--section -1 -->
+
+    <section class="h-30 w-auto bg-red-500">
+
+    <div class="flex justify-between items-center ">
+        <div>
+        <h1 class="text-4xl py-5 text-white mx-5 font-serif"> Hot Zone</h1>
+        </div>
+        <div class="text-white font-bold justify-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+
+        </div>
+
+        <div class="flex gap-4 text-white font-bold mx-4">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+    </div>
+
+</section>
+
+ <!--section -2-->
+
+<nav class=" bg-white shadow-md">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <div class="relative group hidden md:flex space-x-6">
+          <a href="index.html" class="text-xl   hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Home
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5"></span>
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-[#2A3B24] 
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+           
+          </div>
+        </div>
+
+            <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <a href="food.html" class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Food
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          
+        </div>
+
+             <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Western Cusinie
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="burger.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Burger</a>
+            <a href="pizza.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Pizza</a>
+            <a href="momos.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Momos</a>
+            <a href="sandwich.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sandwich</a>
+            <a href="shawarma.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Shawarma</a>
+          </div>
+        </div>
+
+         <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Snacks
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="vada.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Vada Pav</a>
+            <a href="sea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sea Food</a>
+            <a href="sushi.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sushi</a>
+            
+            
+          </div>
+        </div>
+
+           <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Beverages
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="mojiot.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Mojiot</a>
+            <a href="milk.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Milk Shark</a>
+            <a href="ice.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Ice Cream</a>
+            <a href="tea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Tea & Coffee</a>
+            
+          </div>
+        </div>
+       
+
+      <!-- Desktop Button -->
+      <a href="index.html" class="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+        Shop
+      </a>
+      <label for="menuToggle" class="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </label>
+
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+<input type="checkbox" id="menuToggle" class="hidden peer" />
+
+<!-- Mobile Menu -->
+<div
+  class="hidden peer-checked:flex md:hidden flex-col bg-white px-6 py-4 gap-4 shadow-lg"
+>
+  
+  <!-- Home -->
+  <a
+    href="index.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Home
+  </a>
+
+  <!-- Food -->
+  <a
+    href="food.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Food
+  </a>
+
+
+  <!-- Western Cuisine -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Western Cuisine
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+      <a href="burger.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Burger
+      </a>
+
+      <a href="pizza.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Pizza
+      </a>
+
+      <a href="momos.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Momos
+      </a>
+
+      <a href="sandwich.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sandwich
+      </a>
+
+      <a href="shawarma.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Shawarma
+      </a>
+    </div>
+  </details>
+
+
+  <!-- Snacks -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Snacks
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="vada.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Vada Pav
+      </a>
+
+      <a href="sea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sea Food
+      </a>
+
+      <a href="sushi.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sushi
+      </a>
+
+      <a href="meat.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Meat
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Beverages -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Beverages
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="mojiot.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Mojito
+      </a>
+
+      <a href="milk.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Milk Shake
+      </a>
+
+      <a href="ice.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Ice Cream
+      </a>
+
+      <a href="tea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Tea & Coffee
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Button -->
+  <a
+    href="index.html"
+    class="mt-2 bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-700 text-center transition"
+  >
+    Get Started
+  </a>
+
+</div>
+  </nav>
+
+    <!--section -3 -->
+    
+    <section class="h-full w-full">
+         <img src="https://img.freepik.com/premium-photo/strawberry-chocolate-vanilla-shakes_721969-2488.jpg"
+        alt="burgerimage"
+        class="md:h-full md:w-50 lg:h-160 lg:w-full md:object-cover lg:object-cover">
+        <div class="absolute bottom-0 left-10 font-serif text-black md:text-xl lg:text-9xl" >
+            <h1 class=" lg:leading-40">Sip the<br>Sweetness.</h1>
+        </div>
+        <br>
+
+    </section>
+
+    <!--section -4 -->
+    <section class="h-full w-full">
+
+      <div class="text-center py-5 font-bold font-serif md:text-xl lg:text-6xl">
+        <h1>Recommended</h1>
+      </div>
+      <div class="justify-center grid md:grid-cols-1 lg:grid-cols-4 ">
+
+         <div class="relative shadow-xl p-5 justify-center items-center">
+                
+                <img
+ src="https://th.bing.com/th/id/R.3727c9b3785212f77b9b834f8fa5d4b9?rik=UqoO3J3llEKT1Q&riu=http%3a%2f%2fau.wilfa.com%2fcdn%2fshop%2farticles%2fSlush-Machine_Chokolate-Milkshake_1x1_e35ef3a2-09c3-4657-be30-7b2383cb99c7.webp%3fcrop%3dcenter%26height%3d1200%26v%3d1755074868%26width%3d1200&ehk=fmheMDKAP36sbq6Y0Ip7OoIpsa2cZcSA3utbLIG164o%3d&risl=&pid=ImgRaw&r=0"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-3xl text-white font-bold" >
+                    <h1>Chocolate Milkshake</h1>
+                </div>
+            </div>
+         
+           <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://emeryrecipe.com/wp-content/uploads/2025/11/t68wpqlq4cul81htbfxw.webp"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Oreo Milkshake</h1>
+                </div>
+            </div>
+
+          <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://www.sharmispassions.com/wp-content/uploads/2022/01/vanilla-milkshake2.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Vanilla Milkshake</h1>
+                </div>
+            </div> 
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/strawberry-milkshake-black-background_636537-14611.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Strawberry Milkshake</h1>
+                </div>
+            </div> 
+          
+
+      </div>
+    </section>
+<br><br>
+
+    <!--section -5 -->
+
+    <section class="relative">
+      <div class="text-6xl text-center font-sertif font-bold">
+        <h1>Milk Shake Item</h1>
+      </div>
+      <br><br>
+         <div class="grid md:gird-cols-2 lg:grid-cols-4">
+          
+
+       <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.8HQDQcDfre3Qe1Yc4L8XagAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Caramel Milkshake</h1>
+                </div>
+            </div>
+ 
+        
+       <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://bastecutfold.com/wp-content/uploads/2024/12/DSC_0040-10.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Pistachio Milkshake</h1>
+                </div>
+            </div>
+             
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://as2.ftcdn.net/jpg/07/41/73/33/1000_F_741733330_J34nhrC4BNpROGvFF5zQeOlJcHB3rJwW.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Peanut Butter Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tastyoven.com/wp-content/uploads/2022/06/mango-shake-image-500x500.jpeg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Mango Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://i.pinimg.com/originals/6c/a1/58/6ca1580081dbda867e648e87caf31767.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Banana Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://bestalltop.com/wp-content/uploads/2025/12/Butterscotch-Milkshake-2.webp"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Butterscotch Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://dishofdelicious.com/wp-content/uploads/2024/05/d288a0f28b.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>KitKat Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.ziiZazaz69mcLtgIfAtn8wHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Black Forest Milkshake</h1>
+                </div>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://gallivanticecreams.com/wp-content/uploads/2023/07/blueberry-recipe-1.png"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Blueberry Milkshake</h1>
+                </div>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://vintageamericancocktails.com/wp-content/uploads/2024/04/vanilla-ice-cream-shake-683x1024.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Litchi Milkshake</h1>
+                </div>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/delicious-rose-falooda-milkshake-is-feast-eyes-taste-buds-with-layer_555090-75230.jpg"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Flooda Milkshake</h1>
+                </div>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e570043b-1daf-4dbd-b3f7-edae04b144cd/dh6uwk3-80dd3ec5-3530-49a8-909f-95a16e561877.jpg/v1/fill/w_699,h_1143,q_70,strp/raspberry_milkshake_11_by_nezukorempadeviart07_dh6uwk3-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTU2OCIsInBhdGgiOiJcL2ZcL2U1NzAwNDNiLTFkYWYtNGRiZC1iM2Y3LWVkYWUwNGIxNDRjZFwvZGg2dXdrMy04MGRkM2VjNS0zNTMwLTQ5YTgtOTA5Zi05NWExNmU1NjE4NzcuanBnIiwid2lkdGgiOiI8PTk2MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zL7o0v-LZxPZ8l2eBiKATwgfDDFmAiPsm6Hn4ZyjNWA"
+                alt="burger1"
+                class="h-full w-full object-cover">
+                <br><br>
+                <div class="absolute bottom-10 text-center text-4xl text-white font-bold" >
+                    <h1>Raspberry Milkshake</h1>
+                </div>
+            </div>      
+
+        </div>
+    </section>
+
+    <!--section -6 -->
+
+    <section class="w-full px-4 sm:px-6 lg:px-10 py-8">
+
+  <!-- Heading -->
+  <div class="text-center mb-10">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-serif">
+      Offer
+    </h1>
+  </div>
+
+  <!-- Responsive Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Butterscotch Milkshake -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col
+                transition duration-300 hover:scale-[1.03]">
+
+      <img
+        src="https://bestalltop.com/wp-content/uploads/2025/12/Butterscotch-Milkshake-2.webp"
+        alt="Butterscotch Milkshake"
+        class="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold text-xl sm:text-2xl lg:text-3xl
+                 mt-5 text-center tracking-wider">
+        Butterscotch Milkshake
+      </h1>
+
+      <!-- Price -->
+      <div class="flex justify-between items-center mt-5">
+        <span class="text-lg sm:text-xl line-through text-gray-500">
+          Rs.200
+        </span>
+
+        <span class="text-xl sm:text-2xl text-red-500 font-bold">
+          Rs.150
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- KitKat Milkshake -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col
+                transition duration-300 hover:scale-[1.03]">
+
+      <img
+        src="https://dishofdelicious.com/wp-content/uploads/2024/05/d288a0f28b.jpg"
+        alt="KitKat Milkshake"
+        class="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold text-xl sm:text-2xl lg:text-3xl
+                 mt-5 text-center tracking-wider">
+        KitKat Milkshake
+      </h1>
+
+      <!-- Price -->
+      <div class="flex justify-between items-center mt-5">
+        <span class="text-lg sm:text-xl line-through text-gray-500">
+          Rs.280
+        </span>
+
+        <span class="text-xl sm:text-2xl text-red-500 font-bold">
+          Rs.210
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- Falooda Milkshake -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col
+                transition duration-300 hover:scale-[1.03]">
+
+      <img
+        src="https://img.freepik.com/premium-photo/delicious-rose-falooda-milkshake-is-feast-eyes-taste-buds-with-layer_555090-75230.jpg"
+        alt="Falooda Milkshake"
+        class="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold text-xl sm:text-2xl lg:text-3xl
+                 mt-5 text-center tracking-wider">
+        Falooda Milkshake
+      </h1>
+
+      <!-- Price -->
+      <div class="flex justify-between items-center mt-5">
+        <span class="text-lg sm:text-xl line-through text-gray-500">
+          Rs.250
+        </span>
+
+        <span class="text-xl sm:text-2xl text-red-500 font-bold">
+          Rs.170
+        </span>
+      </div>
+
+    </div>
+
+
+    <!-- Oreo Milkshake -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col
+                transition duration-300 hover:scale-[1.03]">
+
+      <img
+        src="https://emeryrecipe.com/wp-content/uploads/2025/11/t68wpqlq4cul81htbfxw.webp"
+        alt="Oreo Milkshake"
+        class="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold text-xl sm:text-2xl lg:text-3xl
+                 mt-5 text-center tracking-wider">
+        Oreo Milkshake
+      </h1>
+
+      <!-- Price -->
+      <div class="flex justify-between items-center mt-5">
+        <span class="text-lg sm:text-xl line-through text-gray-500">
+          Rs.200
+        </span>
+
+        <span class="text-xl sm:text-2xl text-red-500 font-bold">
+          Rs.150
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!--section -7 -->
+    
+    <section class=" px-6">
+        <div class="max-w-8xl mx-auto  text-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-black mb-8">Chef</h2>
+
+            <div class="md:flex items-center gap-8">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://cdn.gulte.com/wp-content/uploads/2023/06/Vijay.jpg"
+                         alt="Profile"
+                         class="rounded-full mx-auto h-50 w-50">
+                </div>
+
+                <div class="md:w-2/3">
+                    <p class="text-lg text-black tracking-wider">
+                    Our chef brings years of culinary expertise, creativity, and passion to every dish we serve. With a commitment to using fresh, high-quality ingredients, each recipe is carefully crafted to deliver exceptional taste and presentation. From signature burgers to delicious sides and desserts, our chef blends traditional flavors with modern
+                    techniques to create a memorable dining experience. Every meal is prepared with care, ensuring quality, freshness, and satisfaction in every bite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--section -9 -->
+
+   <footer class="bg-red-500 w-full text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-12
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- COMPANY / SUPPORT -->
+    <div>
+      <h1 class="font-bold text-3xl lg:text-4xl mb-4">
+        Hot Zone
+      </h1>
+
+      <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+        Need Help?
+      </h2>
+
+      <p class="text-base lg:text-lg">
+        Visit our Customer Support
+      </p>
+
+      <p class="text-base lg:text-lg">
+        for assistance or call us at
+      </p>
+
+      <h3 class="font-bold text-xl lg:text-2xl mt-3 mb-5">
+        123-456-890
+      </h3>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#" aria-label="Facebook">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png"
+            alt="Facebook"
+            class="h-10 w-10 object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="https://audience-av.com/wp-content/uploads/2018/06/instagram_logo_trans_crop.png"
+            alt="Instagram"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img
+            src="https://i.pinimg.com/originals/71/2f/38/712f38a89036a0899889d8ca7febdbc6.png"
+            alt="Pinterest"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Social Media">
+          <img
+            src="https://images.freekaamaal.com/post_images/1648711733.webp"
+            alt="Social Media"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Menu
+      </h1>
+
+      <!-- Food -->
+      <a
+        href="food.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Food
+      </a>
+
+
+      <!-- Western Cuisine -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Western Cuisine
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="burger.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Burger
+          </a>
+
+          <a href="sandwich.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sandwich
+          </a>
+
+          <a href="pizza.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Pizza
+          </a>
+
+          <a href="shawarma.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Shawarma
+          </a>
+
+          <a href="momos.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Momos
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Snacks -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Snacks
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="vada.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Vada Pav
+          </a>
+
+          <a href="sea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sea Food
+          </a>
+
+          <a href="sushi.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sushi
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Beverages -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Beverages
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="mojiot.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Mojito
+          </a>
+
+          <a href="milk.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Milk Shake
+          </a>
+
+          <a href="ice.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Ice Cream
+          </a>
+
+          <a href="tea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Tea & Coffee
+          </a>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- INFO -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Info
+      </h1>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        FAQ
+      </a>
+
+      <a
+        href="about.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        About Us
+      </a>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Customer Support
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-red-400 text-center py-5 px-4">
+    <p class="text-sm md:text-base">
+      © 2026 Hot Zone. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+</body>
+</html>
