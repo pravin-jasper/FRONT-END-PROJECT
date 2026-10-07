@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Momos</title>
+    
+</head>
+<body>
+
+  <!--section -1 -->
+
+    <section class="h-30 w-auto bg-red-500">
+
+    <div class="flex justify-between items-center ">
+        <div>
+        <h1 class="text-4xl py-5 text-white mx-5 font-serif"> Hot Zone</h1>
+        </div>
+        <div class="text-white font-bold justify-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+
+        </div>
+
+        <div class="flex gap-4 text-white font-bold mx-4">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+        </div>
+    </div>
+
+</section>
+
+ <!--section -2-->
+
+<nav class=" bg-white shadow-md">
+
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Desktop Nav Links (hidden on mobile) -->
+      <div class="relative group hidden md:flex space-x-6">
+          <a href="index.html" class="text-xl   hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Home
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5"></span>
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-[#2A3B24] 
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+           
+          </div>
+        </div>
+
+            <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <a href="food.html" class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Food
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            
+          </a>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          
+        </div>
+
+             <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Western Cusinie
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="burger.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Burger</a>
+            <a href="pizza.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Pizza</a>
+            <a href="momos.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Momos</a>
+            <a href="sandwich.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sandwich</a>
+            <a href="shawarma.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Shawarma</a>
+          </div>
+        </div>
+
+         <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Snacks
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="vada.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Vada Pav</a>
+            <a href="sea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sea Food</a>
+            <a href="sushi.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Sushi</a>
+            
+            
+          </div>
+        </div>
+
+           <!-- DROPDOWN: "Destinations" -->
+        <div class="relative group hidden md:flex space-x-6">
+          <button class="text-xl hover:text-orange-300 transition duration-200 flex items-center gap-1">
+            Beverages
+            <!-- small arrow that nudges down on hover using translate-y,
+                 combining Translate + Transitions -->
+            <span class="inline-block transition duration-200 group-hover:translate-y-0.5">▾</span>
+          </button>
+
+          <!-- Dropdown panel: invisible + collapsed by default,
+               revealed on group-hover. `z-50` keeps it above the hero
+               section content underneath it. `overflow-hidden` keeps
+               the rounded corners clean (Overflow concept). -->
+          <div class="absolute left-0 top-full  w-44 bg-white border border-[#3D5A3D]
+                      rounded-lg overflow-hidden opacity-0 invisible
+                      group-hover:opacity-100 group-hover:visible
+                      transition duration-200 z-50">
+            <a href="mojiot.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Mojiot</a>
+            <a href="milk.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Milk Shark</a>
+            <a href="ice.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Ice Cream</a>
+            <a href="tea.html" class="block px-4 py-2 text-sm hover:font-bold hover:bg-red-300 transition duration-150">Tea & Coffee</a>
+            
+          </div>
+        </div>
+       
+
+      <!-- Desktop Button -->
+      <a href="index.html" class="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-700">
+        Shop
+      </a>
+      <label for="menuToggle" class="md:hidden flex flex-col space-y-1.5 cursor-pointer">
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      </label>
+
+    </div>
+
+   <!-- Mobile Menu Toggle -->
+<input type="checkbox" id="menuToggle" class="hidden peer" />
+
+<!-- Mobile Menu -->
+<div
+  class="hidden peer-checked:flex md:hidden flex-col bg-white px-6 py-4 gap-4 shadow-lg"
+>
+  
+  <!-- Home -->
+  <a
+    href="index.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Home
+  </a>
+
+  <!-- Food -->
+  <a
+    href="food.html"
+    class="text-xl text-gray-800 hover:text-orange-500 transition duration-200"
+  >
+    Food
+  </a>
+
+
+  <!-- Western Cuisine -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Western Cuisine
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+      <a href="burger.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Burger
+      </a>
+
+      <a href="pizza.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Pizza
+      </a>
+
+      <a href="momos.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Momos
+      </a>
+
+      <a href="sandwich.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sandwich
+      </a>
+
+      <a href="shawarma.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Shawarma
+      </a>
+    </div>
+  </details>
+
+
+  <!-- Snacks -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Snacks
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="vada.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Vada Pav
+      </a>
+
+      <a href="sea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sea Food
+      </a>
+
+      <a href="sushi.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Sushi
+      </a>
+
+      <a href="meat.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Meat
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Beverages -->
+  <details class="group">
+    <summary
+      class="text-xl text-gray-800 cursor-pointer hover:text-orange-500 flex items-center justify-between"
+    >
+      Beverages
+      <span class="transition group-open:rotate-180">▾</span>
+    </summary>
+
+    <div class="flex flex-col mt-2 ml-4 border-l-2 border-orange-300">
+
+      <a href="mojiot.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Mojito
+      </a>
+
+      <a href="milk.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Milk Shake
+      </a>
+
+      <a href="ice.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Ice Cream
+      </a>
+
+      <a href="tea.html"
+        class="px-4 py-2 hover:bg-red-300 hover:font-bold transition">
+        Tea & Coffee
+      </a>
+
+    </div>
+  </details>
+
+
+  <!-- Button -->
+  <a
+    href="index.html"
+    class="mt-2 bg-red-500 text-white px-4 py-3 rounded-lg hover:bg-red-700 text-center transition"
+  >
+    Get Started
+  </a>
+
+</div>
+  </nav>
+  
+    <!--section -3 -->
+    <section class="h-full w-full">
+         <img src="https://img.freepik.com/premium-photo/traditional-northeastern-momos-white-background-momos-image_1020697-136819.jpg?w=2000"
+        alt="burgerimage"
+        class="md:h-full md:w-50 lg:h-177 lg:w-full md:object-cover lg:object-cover">
+        <div class="absolute bottom-0 left-10 font-serif text-white md:text-xl lg:text-9xl" >
+            <h1 class=" lg:leading-40">Taste is<br>the only<br>constant</h1>
+              
+        </div>
+
+    </section>
+
+    <!--section -4 -->
+    <section class="h-full w-full">
+
+      <div class="text-center py-5 font-bold font-serif md:text-xl lg:text-6xl">
+        <h1>Recommended</h1>
+      </div>
+      <div class="justify-center grid md:grid-cols-1 lg:grid-cols-4 ">
+
+         <div class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://png.pngtree.com/png-clipart/20250117/original/pngtree-perfectly-arranged-steamed-momos-with-chutney-png-image_20263467.png"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Steamed Momos</h1>
+                <hr>
+                <p class="mb-7">Zinger Dunked in Sauce with Bun & Reg Fries Allergen Wheat,Soy,Milk| 902 Kcal..</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>
+         
+           <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://purendesi.in/wp-content/uploads/2024/03/fried-momos-recipe-in-hindi.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Fried Momos</h1>
+                <hr>
+                <p class="mb-7">"Grill sandwich Made with grilled chicken, cheese, lettuce, tomatoes, and mayonnaise, toasted until golden and crispy.</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+          <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://foodwhirl.com/wp-content/uploads/2022/09/IMG_20220723_185625-scaled.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Tandoori Momos</h1>
+                <hr>
+                <p class="mb-7">Grill Pannner with cheese Allergen Wheat, Soy, Milk| 1500 Kcal| Wt 705 gm..</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+           <div  class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://tse2.mm.bing.net/th/id/OIP.AX8Tul-BeKd9bxO5q0i66wHaE0?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Cheese Momos</h1>
+                <hr>
+                <p class="mb-7">Double Chicken Dynamite with Regular Popcorn and Pepsi PET.</p>
+                <div class="absolute bottom-3 h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-3 left-15">Non-Veg</p>
+            </div>  
+
+      </div>
+    </section>
+<br><br>
+
+    <!--section -5 -->
+
+    <section class="relative">
+      <div class="text-6xl text-center font-sertif font-bold">
+        <h1>Momos Item</h1>
+      </div>
+      <br><br>
+         <div class="grid md:gird-cols-2 lg:grid-cols-4">
+          
+            <div class="relative md:sticky md:top-4 self-start row-span-6">
+              
+              
+                <div class=" py-5 flex">
+                <img src="img/hz.jpeg" class="h-30 w-30 rounded-full">
+                <h1 class="p-5  font-bold mb-8 md:text-2xl lg:text-5xl">Momos Menu</h1>
+                </div>
+
+                <div class="flex flex-col  justify-center items-center">
+                    
+                    <a href="#veg" class="text-3xl mb-20 hover:text-orange-500">Veg Momos</a>
+                    <a href="#non" class="text-3xl mb-10 hover:text-orange-500">Non-Veg Momos</a>
+                    
+                
+                    
+                </div>
+
+
+            </div>
+
+       <div id="veg" class=" relative shadow-xl p-5 justify-center items-center">
+                
+                <img src="https://gyanhigyan.com/static/c1e/client/99589/downloaded/320621e1f334d8f742b7048a333e6ef4.png?width=968&height=500&resizemode=4"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Mixed Vegetable Momos</h1>
+                <hr>
+                <p class="mb-3">A delicious sandwich made with mixed vegetables .</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.180</p>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://passion2cook.com/wp-content/uploads/2023/03/paneer-momos-1.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Paneer Momos</h1>
+                <hr>
+                <p class="mb-3">A triple-layer sandwich filled with fresh vegetables, lettuce, cheese.</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.130</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/exotic-mushroom-momos-momos-dumplings-image-photography_1020697-137706.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <br><br>
+                <h1 class="font-bold mb-1 tracking-wider">Mushroom Momos</h1>
+                <hr>
+                <p class="mb-3">Soft paneer  with fresh vegetables and mint mayonnaise. units of Delicious panner sandwich.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.120</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://i.pinimg.com/736x/05/57/7f/05577fe615f17f58811dd88e08b6e03d.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Corn Momos</h1>
+                <hr>
+                <p class="mb-3">Made with spicy mashed potatoes, onions, and herbs. It can be toasted or grilled for extra crunch..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.130</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.AX8Tul-BeKd9bxO5q0i66wHaE0?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Cheese Momos </h1>
+                <hr>
+                <p class="mb-3">Filled with fresh vegetables such as cabbage, carrots, cucumber, and capsicum mixed with mayonnaise for a creamy, refreshing taste.</p>
+                <div class="absolute bottom-5 h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.90</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/khinkali-georgian-dumplings-prepared-boiling_908985-68255.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Spinach Momos</h1>
+                <hr>
+                <p class="mb-3">Fresh vegetables layered with green chutney and cheese, creating a flavorful Indian-style sandwich.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.140</p>
+            </div>
+
+             <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://manamaduraionline.com/wp-content/uploads/2025/05/chicken-momos-5-pcs-.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Chicken Momos</h1>
+                <hr>
+                <p class="mb-3">Made with grilled chicken, cheese, lettuce, tomatoes, and mayonnaise, toasted until golden and crispy.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.200</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://www.thespruceeats.com/thmb/UnVh_-znw7ikMUciZIx5sNqBtTU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-momos-wontons-1957616-hero-01-1c59e22bad0347daa8f0dfe12894bc3c.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Mutton Momos</h1>
+                <hr>
+                <p class="mb-3">A triple-layer sandwich filled with grilled chicken, lettuce, tomato, cheese, and mayonnaise for a hearty meal.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.230</p>
+            </div>
+
+            <div id="non" class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img.freepik.com/premium-photo/juicy-prawn-momos-momos-dumplings-image-photography_1020697-137256.jpg?w=996"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Prawn Momos</h1>
+                <hr>
+                <p class="mb-3">Filled with spicy chicken tikka, onions, mint chutney, and cheese, offering rich Indian flavors..</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.230</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://th.bing.com/th/id/R.3153782c5d4cd4dc30d1889165cbdb05?rik=fZgjwMyqtiZUIw&riu=http%3a%2f%2fwww.cookingenuff.com%2fwp-content%2fuploads%2f2015%2f11%2frsz_fish_momo.jpg&ehk=gpvFL1k3Ce5cExKIicG6AsfGXTAQdPucp9ALiRIg8Rk%3d&risl=&pid=ImgRaw&r=0"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Fish Momos</h1>
+                <hr>
+                <p class="mb-3">Prepared with boiled or scrambled eggs, mayonnaise, black pepper, and fresh vegetables. Ideal for breakfast or snacks.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.180</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.gNpLC-bwu3HOJq8BGfCicQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Egg Momos </h1>
+                <hr>
+                <p class="mb-3">Made with tuna mixed with mayonnaise, onions, celery, and lettuce, served fresh or toasted.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.200</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://img-global.cpcdn.com/recipes/4163952dc86c875c/1360x964cq70/keema-momos.jpg"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Keema Momos</h1>
+                <hr>
+                <p class="mb-3">Juicy shredded chicken coated in barbecue sauce, topped with lettuce, onions, and cheese, served in toasted bread.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.220</p>
+            </div>
+
+            <div id="comb"class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://images.timesnownews.com/photo/msid-110364176,width-1280,height-720/110364176.jpg?quality=100"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Turkey Momos</h1>
+                <hr>
+                <p class="mb-3">Grilled Veg Sandwich served with French fries and a soft drink.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.280</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.Cb55t3XeNaNg17gdBzdy_QHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Buff Momos</h1>
+                <hr>
+                <p class="mb-3">Paneer Sandwich served with potato wedges and a fresh fruit juice.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.300</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://cnt.farmerstoyou.com/spree/images/attachments/000/016/444/small/pork_momos_6x48.jpg?1701355787"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Pork Momos</h1>
+                <hr>
+                <p class="mb-3">"Grilled Chicken Sandwich served with French fries and a cold drink.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.400</p>
+            </div>
+
+            <div id="pes" class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.Si7cLFmse7bpSS6xck20XQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Duck Momos</h1>
+                <hr>
+                <p class="mb-3">Chicken Club Sandwich served with crispy fries and iced tea.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.240</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.HV3UY-9lpIV3xGjcK6ldWQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Lamb Momos</h1>
+                <hr>
+                <p class="mb-3">Egg Sandwich served with hash browns and hot coffee or tea.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-lime-600"><div class="h-full w-full bg-lime-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.420</p>
+            </div>
+
+            <div class="relative shadow-xl p-5 justify-center items-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/045/965/868/non_2x/crab-rangoon-crispy-wonton-shells-filled-with-a-creamy-crab-and-cream-cheese-mixture-served-png.png"
+                alt="burger1"
+                class="h-80 w-80 object-cover">
+                <h1 class="font-bold mb-1 tracking-wider">Crab Momos</h1>
+                <hr>
+                <p class="mb-3">BBQ Chicken Sandwich served with onion rings, French fries, and a soft drink.</p>
+                <div class="h-8 w-8 border rounded-lg border-2 p-[3px] border-red-600"><div class="h-full w-full bg-red-600 rounded-lg"></div></div>
+            <p class="absolute bottom-5 left-15">Non-Veg</p>
+             <p class="absolute bottom-5 right-10 text-2xl text-red-500 font-bold">Rs.380</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--section -6 -->
+
+    <section class="w-full py-10 px-4 sm:px-6 lg:px-10">
+
+  <!-- Heading -->
+  <div class="text-center mb-10">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-serif">
+      Offer
+    </h1>
+  </div>
+
+  <!-- Responsive Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col hover:scale-105 transition duration-300">
+
+      <img
+        src="https://tse1.mm.bing.net/th/id/OIP.Cb55t3XeNaNg17gdBzdy_QHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="Buff Momos"
+        class="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider text-lg">
+        Buff Momos
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm text-gray-600 flex-grow">
+        BBQ Chicken Sandwich served with onion rings, French fries, and a soft drink.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-red-600 p-[3px]">
+            <div class="h-full w-full bg-red-600 rounded-sm"></div>
+          </div>
+          <span class="text-sm">Non-Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-gray-500 line-through">Rs.320</span>
+          <span class="text-xl text-red-500 font-bold">Rs.250</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col hover:scale-105 transition duration-300">
+
+      <img
+        src="https://tse2.mm.bing.net/th/id/OIP.AX8Tul-BeKd9bxO5q0i66wHaE0?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="Cheese Momos"
+        class="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider text-lg">
+        Cheese Momos
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm text-gray-600 flex-grow">
+        Delicious momos prepared with cheese, vegetables, herbs, and flavorful seasoning.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-lime-600 p-[3px]">
+            <div class="h-full w-full bg-lime-600 rounded-sm"></div>
+          </div>
+          <span class="text-sm">Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-gray-500 line-through">Rs.300</span>
+          <span class="text-xl text-red-500 font-bold">Rs.250</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col hover:scale-105 transition duration-300">
+
+      <img
+        src="https://img.freepik.com/premium-photo/khinkali-georgian-dumplings-prepared-boiling_908985-68255.jpg"
+        alt="Spinach Momos"
+        class="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider text-lg">
+        Spinach Momos
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm text-gray-600 flex-grow">
+        Soft momos filled with fresh spinach, paneer, vegetables, and mint mayonnaise.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-lime-600 p-[3px]">
+            <div class="h-full w-full bg-lime-600 rounded-sm"></div>
+          </div>
+          <span class="text-sm">Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-gray-500 line-through">Rs.250</span>
+          <span class="text-xl text-red-500 font-bold">Rs.200</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="shadow-xl rounded-xl p-5 flex flex-col hover:scale-105 transition duration-300">
+
+      <img
+        src="https://img.freepik.com/premium-photo/juicy-prawn-momos-momos-dumplings-image-photography_1020697-137256.jpg?w=996"
+        alt="Prawn Momos"
+        class="w-full h-56 sm:h-64 lg:h-72 object-cover rounded-lg"
+      >
+
+      <h1 class="font-bold mt-4 mb-2 tracking-wider text-lg">
+        Prawn Momos
+      </h1>
+
+      <hr>
+
+      <p class="my-3 text-sm text-gray-600 flex-grow">
+        Juicy momos filled with delicious prawns, herbs, spices, and flavorful seasoning.
+      </p>
+
+      <div class="flex items-center justify-between mt-4">
+
+        <div class="flex items-center gap-2">
+          <div class="h-6 w-6 border-2 rounded-md border-red-600 p-[3px]">
+            <div class="h-full w-full bg-red-600 rounded-sm"></div>
+          </div>
+          <span class="text-sm">Non-Veg</span>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="text-gray-500 line-through">Rs.300</span>
+          <span class="text-xl text-red-500 font-bold">Rs.240</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!--section -7 -->
+    
+    <section class=" px-6">
+        <div class="max-w-8xl mx-auto  text-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-center text-black mb-8">Chef</h2>
+
+            <div class="md:flex items-center gap-8">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://i.pinimg.com/originals/f0/0a/cd/f00acdb050757706c348c2de4a92ecc4.jpg"
+                         alt="Profile"
+                         class="rounded-full mx-auto h-50 w-50">
+                </div>
+
+                <div class="md:w-2/3">
+                    <p class="text-lg text-black tracking-wider">
+                    Our chef brings years of culinary expertise, creativity, and passion to every dish we serve. With a commitment to using fresh, high-quality ingredients, each recipe is carefully crafted to deliver exceptional taste and presentation. From signature burgers to delicious sides and desserts, our chef blends traditional flavors with modern
+                    techniques to create a memorable dining experience. Every meal is prepared with care, ensuring quality, freshness, and satisfaction in every bite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!--section -9 -->
+
+      <footer class="bg-red-500 w-full text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-12
+              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- COMPANY / SUPPORT -->
+    <div>
+      <h1 class="font-bold text-3xl lg:text-4xl mb-4">
+        Hot Zone
+      </h1>
+
+      <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+        Need Help?
+      </h2>
+
+      <p class="text-base lg:text-lg">
+        Visit our Customer Support
+      </p>
+
+      <p class="text-base lg:text-lg">
+        for assistance or call us at
+      </p>
+
+      <h3 class="font-bold text-xl lg:text-2xl mt-3 mb-5">
+        123-456-890
+      </h3>
+
+      <!-- Social Icons -->
+      <div class="flex flex-wrap gap-4">
+
+        <a href="#" aria-label="Facebook">
+          <img
+            src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-1-2.png"
+            alt="Facebook"
+            class="h-10 w-10 object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="https://audience-av.com/wp-content/uploads/2018/06/instagram_logo_trans_crop.png"
+            alt="Instagram"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Pinterest">
+          <img
+            src="https://i.pinimg.com/originals/71/2f/38/712f38a89036a0899889d8ca7febdbc6.png"
+            alt="Pinterest"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+        <a href="#" aria-label="Social Media">
+          <img
+            src="https://images.freekaamaal.com/post_images/1648711733.webp"
+            alt="Social Media"
+            class="h-10 w-10 rounded-full object-contain hover:scale-110 transition"
+          >
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- MENU -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Menu
+      </h1>
+
+      <!-- Food -->
+      <a
+        href="food.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Food
+      </a>
+
+
+      <!-- Western Cuisine -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Western Cuisine
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="burger.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Burger
+          </a>
+
+          <a href="sandwich.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sandwich
+          </a>
+
+          <a href="pizza.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Pizza
+          </a>
+
+          <a href="shawarma.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Shawarma
+          </a>
+
+          <a href="momos.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Momos
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Snacks -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Snacks
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="vada.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Vada Pav
+          </a>
+
+          <a href="sea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sea Food
+          </a>
+
+          <a href="sushi.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Sushi
+          </a>
+
+        </div>
+
+      </details>
+
+
+      <!-- Beverages -->
+      <details class="group">
+
+        <summary
+          class="text-xl lg:text-2xl cursor-pointer
+                 flex items-center justify-between
+                 hover:text-orange-200 py-1"
+        >
+          Beverages
+
+          <span class="transition-transform duration-200 group-open:rotate-180">
+            ▾
+          </span>
+        </summary>
+
+        <div class="flex flex-col ml-4 mt-2 bg-red-600 rounded-lg overflow-hidden">
+
+          <a href="mojiot.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Mojito
+          </a>
+
+          <a href="milk.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Milk Shake
+          </a>
+
+          <a href="ice.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Ice Cream
+          </a>
+
+          <a href="tea.html"
+             class="px-4 py-3 hover:bg-red-700 transition">
+            Tea & Coffee
+          </a>
+
+        </div>
+
+      </details>
+
+    </div>
+
+
+    <!-- INFO -->
+    <div class="flex flex-col gap-4">
+
+      <h1 class="font-bold text-3xl lg:text-4xl">
+        Info
+      </h1>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        FAQ
+      </a>
+
+      <a
+        href="about.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        About Us
+      </a>
+
+      <a
+        href="customer.html"
+        class="text-xl lg:text-2xl hover:text-orange-200 transition py-1"
+      >
+        Customer Support
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Bottom Footer -->
+  <div class="border-t border-red-400 text-center py-5 px-4">
+    <p class="text-sm md:text-base">
+      © 2026 Hot Zone. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+</body>
+</html>
