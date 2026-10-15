@@ -54,7 +54,7 @@ If deploying with GitHub Pages, ensure the published directory contains an `inde
 
 ## Repository
 
-[FRONT-END-PROJECT](https://github.com/pravin-jasper/FRONT-END-PROJECT)
+[FRONT-END-PROJECT](https://pravin-jasper.github.io/FRONT-END-PROJECT/)
 
 ---
 
